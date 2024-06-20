@@ -11,11 +11,12 @@ import HeaderButton from "./HeaderButton.astro";
     <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
       All information about SpaceX launches
     </p>
+   
   </div>
   <nav
-    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+    class="flex flex-col mx-auto items-center justify-between w-4/5 text-center md:flex-row"
   >
-    <HeaderButton class="text-white" href="/about">
+    <HeaderButton  path="/">
       <svg
         slot="before"
         width="24"
@@ -34,7 +35,8 @@ import HeaderButton from "./HeaderButton.astro";
       >
       Latest releases
     </HeaderButton>
-    <HeaderButton class="text-white" href="/">
+
+    <HeaderButton path="/about">
       <svg
         slot="before"
         width="24"
@@ -52,7 +54,7 @@ import HeaderButton from "./HeaderButton.astro";
       >
       About the project
     </HeaderButton>
-    <HeaderButton class="text-white" href="/oldest">
+    <HeaderButton path="/404">
       <svg
         slot="before"
         width="24"

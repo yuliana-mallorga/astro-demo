@@ -15,7 +15,7 @@ const launchStatus = success ? "Success" : "Failure";
   href={`/launch/${id}`}
   class="rouned-lg border shadow-md bg-gray-800 border-gray-700 
   hover:scale-105 hover:bg-gray-700 hover:border-gray-500 transition 
-  flex flex-col"
+  flex flex-col w-full"
 >
     <picture class="flex justify-center p-4">
         <img class="mb-5 rounded-lg" src={img} alt={`Patch for launch ${id}`}/>
@@ -40,8 +40,3 @@ const launchStatus = success ? "Success" : "Failure";
         </p>
     </header>
 </a>
-<!-- 
-<article>
-    <img src={launch.links.patch.small} alt={launch.name} />
-    <h2>Launch #{launch.id}</h2>
-</article> -->
